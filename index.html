@@ -1,246 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KISHAN - Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            
-        }
-    body{
-      background-color: rgb(0, 0, 33);  
-      color: white;
-      font-family: 'Poppins', sans-serif;
-
-
-    }
-    nav{
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
         height: 80px;
-        background-color: rgb(0, 0, 0)
-        
-    }
-    nav ul{
+        background-color: rgb(0, 0, 0);
+      }
+      nav ul {
         display: flex;
         justify-content: center;
-    }
-    nav ul li{
+      }
+      nav ul li {
         margin: 0 23px;
         list-style: none;
         font-size: 17px;
-       
-        
-    }
-    nav ul li a{
+      }
+      nav ul li a {
         text-decoration: none;
         color: #000021;
         color: rgb(1, 150, 250); /* Set text color */
-    text-shadow: 
-        -1px -1px 0 black,  
-         1px -1px 0 black,
-        -1px  1px 0 black,
-         1px  1px 0 black;
-        
-    }
-    
-    nav ul li a:hover{
-      color: lavenderblush;
-      font-size: 1.02rem;
-    }
-    .left{
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+          1px 1px 0 black;
+      }
+
+      nav ul li a:hover {
+        color: lavenderblush;
+        font-size: 1.02rem;
+      }
+      .left {
         font-size: 1.5rem;
-    }
-    .firstSection{
+      }
+      .firstSection {
         display: flex;
         justify-content: space-around;
         margin: 130px 0;
         align-items: center;
-        
-    }
-    .firstSection > div{
+      }
+      .firstSection > div {
         width: 30%;
-    }
-    .leftSection{
+      }
+      .leftSection {
         font-size: 3rem;
         margin: 90px 0;
-
-    }
-    .rightSection img{
+      }
+      .rightSection img {
         margin: 20px 0;
         width: 70%;
-
-    }
-    .purple{
+      }
+      .purple {
         color: rgb(255, 102, 0);
-        
-    }
-    .red{
+      }
+      .red {
         color: rgb(0, 255, 200);
         font-family: cursive;
-    }
-    #element{
+      }
+      #element {
         color: lawngreen;
         font-family: cursive;
-    }
-    .secondSection{
+      }
+      .secondSection {
         max-width: 80vw;
         margin: auto;
         height: 80vh;
+      }
 
-    }
-    
-    main hr{
+      main hr {
         border: 0;
         background: #9c97f1;
         height: 1.2px;
         margin: 60px 84px;
-    }
-    .secondSection h1{
+      }
+      .secondSection h1 {
         font-size: 1.9rem;
-    }
-    .secondSection .box{
+      }
+      .secondSection .box {
         background: white;
         width: 77vw;
         height: 2px;
         margin: 56px 0;
         display: flex;
         justify-content: space-between;
-    }
-    .text-gray{
+      }
+      .text-gray {
         color: gray;
-    }
-    .secondSection .vertical{
+      }
+      .secondSection .vertical {
         height: 93px;
         width: 1px;
         background-color: white;
         margin: 0 120px;
-       
-      
-        
-
-    }
-    .image-top{
+      }
+      .image-top {
         width: 23px;
         position: relative;
         top: -32px;
         left: -9px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 85px;
+        color: gray;
+        font-size: 9px;
+      }
+    .btn-box{
+        display: inline-block;
+       padding: 12px 28px;
+       background: rgb(0, 238, 255);
+       border-radius: 40px;
+       font-size: 16px;
+       color: hsl(205, 67%, 10%);
+       letter-spacing: none;
+       font-weight: 700;
+       
+       display: inline-block;
+
+      }
+      .btn-box:hover{
+        color: rgb(255, 0, 0);
+        background-color: black;
+      }
+      .about{
+        display: grid;
+       grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 1.5rem;
+       
+        }
+        
+    .about-img img{
+        padding-bottom: 20%;
+        max-width: 630px;
+        height: auto;
+        width: 100%;
+        border-radius: 8px;
+        height: 100%;
+        object-fit: cover;
+        border-color: crimson;
+
+    }    
+    .about-text h2{
+font-size: 60px;
     }
-    .vertical-title{
-           position: relative;
-           top: 75px;
-           width: 150px;
-           
+    .about-text h2 span{
+        color: aqua;
+    }
+    .about-text h4{
+        font-size: 29px;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1.7;
+        margin: 15px 0 30px;
 
     }
-    .vertical-desc{
-            position: relative;
-            top: 85px;
-            color: gray;
-            font-size: 9px;
-            
+    .about-text p{
+        color: aliceblue;
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 4rem;
+
     }
-    
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="left">
-                KISHAN'S PORTFOLIO
-            </div>
-            <div class="right">
-                <ul>
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="/">ABOUT</a></li>
-                    <li><a href="/">SERVICES</a></li>
-                    <li><a href="/">PROJECTS</a></li>
-                    <li><a href="/">CONTACTS</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+        <div class="left">KISHAN'S PORTFOLIO</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/">ABOUT</a></li>
+            <li><a href="/">SERVICES</a></li>
+            <li><a href="/">PROJECTS</a></li>
+            <li><a href="/">CONTACTS</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                Hi, My name is <span class="purple">KISHAN</span>
-                <div class="">and I am a passionate</div>
-                <span id="element"></span>
-            </div>
-            <div class="rightSection">
-                <img src="best.gif" alt="developer">
-            </div>
-        </section>
-        <hr>
-        <section>
-            <!-- ... Your existing HTML code ... -->
-
-<section class="secondSection">
-    <span class="text-gray"> What I have done so far</span>
-    <h1>Work experience</h1>
-
-    <div class="box">
-        <div class="vertical">
-            <img class="image-top" src="html.png" alt="" srcset="">
-            <div class="vertical-title">
-                HTML Developer
-            </div>
-            <div class="vertical-desc">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, delectus?
-                
-                
-              
-            </div>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">KISHAN</span>
+          <div class="">and I am a passionate</div>
+          <span id="element"></span>
         </div>
-
-       
-        <div class="vertical">
-            <img class="image-top" src="css.png" alt="" srcset="">
-            <div class="vertical-title">
-                CSS Developer
-            </div>
-            <div class="vertical-desc">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque aperiam quidem cumque ipsa culpa
-                exercitationem recusandae laborum facilis. Aperiam autem ipsa inventore ex?
-            </div>
+        <div class="rightSection">
+          <img src="best.gif" alt="developer" />
         </div>
+      </section>
+      <hr />
+      <section class="about" id="about">
+        <div class="about-img">
+          <img src="kishan.jpg" alt="" srcset="" />
+        </div>
+        <div class="about-text">
+          <h2>About <span>ME</span></h2>
+          <h4>FULL STACK DEVELOPER</h4>
+          <p>
+            As a seasoned Full Stack Developer, I bring a robust set of skills
+            spanning both front-end and back-end technologies. With expertise in
+            HTML, CSS, JavaScript, React.js, Node.js, and more, I have
+            successfully translated ideas into interactive and efficient web
+            applications. My portfolio showcases a diverse range of projects,  
+            each reflecting my dedication to creating innovative solutions.
 
-        <div class="vertical">
-            <img class="image-top" src="pro.png" alt="" srcset="">
-            <div class="vertical-title">
-                 Ui-Ux Designer
-            </div>
-            <div class="vertical-desc">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque aperiam quidem cumque ipsa culpa
-                exercitationem recusandae laborum facilis. Aperiam autem ipsa inventore ex?
-            </div>
-            
-        
- </div>       
-          
-        
+          </p>
+          <button class="btn-box" >Read MORE</button>
+
+        </div>
+      </section>
+  <section>
+    <div class="services" id="services">
+     <div class="container">
+        <h1 class="sub-title"> MY <span>Services</span></h1>
+     </div>
     </div>
-</section>
-
-
-        </section>
+  </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-        var typed = new Typed('#element', {
-            strings: ['Video Editor.', 'App-developer.', 'Web Designer.', 'Web-Developer.'],
-            typeSpeed: 50,
-        });
+      var typed = new Typed("#element", {
+        strings: [
+          "Video Editor.",
+          "App-developer.",
+          "Web Designer.",
+          "Web-Developer.",
+        ],
+        typeSpeed: 50,
+      });
     </script>
-</body>
-
+  </body>
 </html>
